@@ -17,13 +17,6 @@ jenkins:
   authorizationStrategy:
     loggedInUsersCanDoAnything:
       allowAnonymousRead: false
-  clouds:
-  - kubernetes:
-      containerCap: 10
-      containerCapStr: "10"
-      name: "kubernetes"
-      namespace: "default"
-      serverUrl: "https://192.168.49.2:50740"
   crumbIssuer:
     standard:
       excludeClientIPFromCrumb: false
